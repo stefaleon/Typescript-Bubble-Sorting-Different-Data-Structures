@@ -1,7 +1,13 @@
 import { ArrayOfNumbers } from "./ArrayOfNumbers";
 
+interface Sortable {
+  length: number;
+  leftIsBigger(left: number, right: number): boolean;
+  swap(left: number, right: number): void;
+}
+
 export class Sorter {
-  constructor(public collection: ArrayOfNumbers) {}
+  constructor(public collection: Sortable) {}
 
   sort(): void {
     const { length } = this.collection;

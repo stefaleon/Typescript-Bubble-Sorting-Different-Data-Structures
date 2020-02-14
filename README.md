@@ -19,6 +19,6 @@
 
 ## project target
 
-Code reuse in typescript
-Type Guards
-Abstract Classes
+- Code reuse with Classes and Interfaces
+- Type Guards
+- Abstract Classes

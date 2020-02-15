@@ -16,11 +16,8 @@ stringSorter.sort();
 console.log(stringSorter.collection);
 
 const listSample = new LinkedListOfNumbers();
-listSample.add(100);
-listSample.add(42);
-listSample.add(-10);
-listSample.add(13);
-listSample.add(77);
+const listData = [100, 42, -10, 13, 77];
+listData.map(num => listSample.add(num));
 console.log("list before sorting:");
 listSample.print();
 const listSorter = new Sorter(listSample);
